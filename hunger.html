@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOPEFULL LIGHT | Hunger</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: white;
+            color: #2F6FB3;
+        }
+        h1,
+        h3 {
+            color: #2F6FB3;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+        th,
+        td {
+            text-align: left;
+            padding: 14px;
+        }
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+        td {
+            color: #2F6FB3;
+            border-bottom: 1px solid #D6EAF8;
+        }
+        .organization-row:nth-child(even) {
+            background-color: #F5FAFE;
+        }
+        .organization-row:hover {
+            background-color: #D6EAF8;
+        }
+        #orgSearch {
+            width: 350px;
+            max-width: 90%;
+            padding: 12px;
+            border: 2px solid #4A90E2;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+        }
+        #orgSearch:focus {
+            border-color: #2F6FB3;
+        }
+        .donate-link {
+            display: inline-block;
+            padding: 9px 14px;
+            background-color: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .donate-link:hover {
+            background-color: #2F6FB3;
+        }
+        .intro-section {
+            max-width: 900px;
+            line-height: 1.7;
+        }
+        .stat {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <ul>
+        <li>
+            <a class="nav-link" href="index.html">
+                HOME
+            </a>
+            <a class="nav-link" href="about us.html">
+                ABOUT US
+            </a>
+            <a class="nav-link" href="water.html">
+                THIRST
+            </a>
+            <a class="nav-link active" href="hunger.html">
+                HUNGER
+            </a>
+            <a class="nav-link" href="clothing.html">
+                CLOTHES
+            </a>
+            <a class="nav-link" href="quality education.html">
+                LEARNING
+            </a>
+            <a class="nav-link" href="shelter.html">
+                SHELTER
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <!-- Introduction -->
+    <section class="intro-section">
+        <h1>
+            Hunger
+        </h1>
+        <h3>
+            Hunger happens when people do not have enough food
+            to meet their nutritional needs and live healthy,
+            active lives.
+            <br><br>
+            According to the World Food Programme,
+            around
+            <span class="stat">645 million people</span>
+            experienced hunger in 2025.
+            <br><br>
+            In 2026, around
+            <span class="stat">266 million people</span>
+            are facing acute hunger in countries affected
+            by food crises.
+            <br><br>
+            Conflict, economic shocks and climate-related events
+            are among the major factors that contribute to food insecurity.
+            <br><br>
+            The organizations below work to provide food,
+            emergency assistance, nutrition programs
+            and long-term solutions to hunger.
+        </h3>
+    </section>
+    <hr>
+    <br>
+    <!-- Search -->
+    <input
+        type="text"
+        id="orgSearch"
+        placeholder="Search organizations, children, meals, emergency..."
+        oninput="searchOrganizations()"
+    >
+    <br><br>
+    <!-- Organizations Table -->
+    <table>
+        <tr>
+            <th>ORGANIZATION</th>
+            <th>FOCUS</th>
+            <th>WHERE THEY WORK</th>
+            <th>INFORMATION</th>
+            <th>WEBSITE</th>
+        </tr>
+        <!-- World Food Program USA -->
+        <tr
+            class="organization-row"
+            data-name="world food program usa wfp"
+            data-tags="food hunger meals children families emergency famine school meals global"
+        >
+            <td>
+                World Food Program USA
+            </td>
+            <td>
+                Emergency food assistance and hunger relief
+            </td>
+            <td>
+                Global
+            </td>
+            <td>
+                World Food Program USA raises funds and awareness
+                in support of the United Nations World Food Programme.
+                WFP provides food assistance during emergencies,
+                supports school meal programs and works with
+                communities affected by hunger and food insecurity.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://wfpusa.org/give/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- Action Against Hunger -->
+        <tr
+            class="organization-row"
+            data-name="action against hunger"
+            data-tags="hunger food nutrition malnutrition children emergency water health families"
+        >
+            <td>
+                Action Against Hunger
+            </td>
+            <td>
+                Hunger and malnutrition
+            </td>
+            <td>
+                International
+            </td>
+            <td>
+                Action Against Hunger works to prevent,
+                detect and treat malnutrition while helping
+                communities improve access to food,
+                clean water and essential health services.
+                It also responds to humanitarian emergencies.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.actionagainsthunger.org/take-action/donate/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+        <!-- Feeding America -->
+        <tr
+            class="organization-row"
+            data-name="feeding america"
+            data-tags="food hunger meals families children food banks community america"
+        >
+            <td>
+                Feeding America
+            </td>
+            <td>
+                Food banks and community hunger relief
+            </td>
+            <td>
+                United States
+            </td>
+            <td>
+                Feeding America supports a nationwide network
+                of food banks, food pantries and local meal programs.
+                Its work helps individuals and families
+                experiencing food insecurity access food
+                through community-based organizations.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.feedingamerica.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- Al Basma Association -->
+        <tr
+            class="organization-row"
+            data-name="al basma association"
+            data-tags="food hunger charity volunteers nazareth families children local community"
+        >
+            <td>
+                Al Basma Association
+            </td>
+            <td>
+                Local charity and community support
+            </td>
+            <td>
+                Nazareth
+            </td>
+            <td>
+                Al Basma Association is a local charity
+                and social organization connected with
+                volunteer and community support activities
+                in Nazareth.
+                This entry is kept from the original version
+                of the project.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://ar-ar.facebook.com/%D8%AC%D9%85%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B3%D9%85%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%B5%D8%B1%D8%A9-411911428821578/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+    </table>
+    <!-- JavaScript -->
+    <script>
+        function searchOrganizations() {
+            const searchText =
+                document
+                    .getElementById("orgSearch")
+                    .value
+                    .toLowerCase()
+                    .trim();
+            const rows =
+                document.querySelectorAll(".organization-row");
+            rows.forEach(function(row) {
+                const name =
+                    row.dataset.name.toLowerCase();
+                const tags =
+                    row.dataset.tags.toLowerCase();
+                if (
+                    name.includes(searchText) ||
+                    tags.includes(searchText)
+                ) {
+                    row.style.display = "";
+
+                }
+                else {
+                    row.style.display = "none";
+
+                }
+            });
+        }
+    </script>
+</body>
+</html>

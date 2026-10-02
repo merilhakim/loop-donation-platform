@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <title>HOPEFULL LIGHT | HOME</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: white;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        .mySlides {
+            display: none;
+            position: relative;
+        }
+        .mySlides img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .slide-label {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+        .slide-label a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        .slide-label a:hover {
+            text-decoration: underline;
+        }
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+        .intro-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            color: #2F6FB3;
+            background-color: white;
+            line-height: 1.7;
+        }
+        .intro-section h2 {
+            color: #2F6FB3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <ul>
+        <li>
+            <a class="nav-link active" href="index.html">
+                HOME
+            </a>
+            <a class="nav-link" href="about us.html">
+                ABOUT US
+            </a>
+            <a class="nav-link" href="water.html">
+                THIRST
+            </a>
+            <a class="nav-link" href="hunger.html">
+                HUNGER
+            </a>
+            <a class="nav-link" href="clothing.html">
+                CLOTHES
+            </a>
+            <a class="nav-link" href="quality education.html">
+                LEARNING
+            </a>
+            <a class="nav-link" href="shelter.html">
+                SHELTER
+            </a>
+        </li>
+    </ul>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <!-- Shelter -->
+        <div class="mySlides">
+          <img src="images/shelter.jpeg"  alt="Volunteers building safe housing">
+            <div class="slide-label">
+                <a href="shelter.html">
+                    Shelter
+                </a>
+            </div>
+        </div>
+
+        <!-- Hunger -->
+        <div class="mySlides">
+           <img src="images/hunger.jpeg" alt="Community food distribution">
+            <div class="slide-label">
+                <a href="hunger.html">
+                    Hunger
+                </a>
+            </div>
+        </div>
+
+        <!-- Thirst -->
+        <div class="mySlides">
+            <img src="images/water.jpeg" alt="Children accessing clean water">
+            <div class="slide-label">
+                <a href="water.html">
+                    Thirst
+                </a>
+            </div>
+        </div>
+
+        <!-- Learning -->
+        <div class="mySlides">
+            <img src="images/education.jpeg" alt="Children learning in a classroom">
+            <div class="slide-label">
+                <a href="quality education.html">
+                    Learning
+                </a>
+            </div>
+        </div>
+
+        <!-- Clothing -->
+        <div class="mySlides">
+            <img src="images/clothing.jpeg" alt="Volunteers sorting donated clothing">
+            <div class="slide-label">
+                <a href="clothing.html">
+                    Clothes
+                </a>
+            </div>
+        </div>
+
+        <!-- Slideshow buttons -->
+        <button
+            class="prev"
+            onclick="plusDivs(-1)"
+        >
+            &#10094;
+        </button>
+        <button
+            class="next"
+            onclick="plusDivs(1)"
+        >
+            &#10095;
+        </button>
+    </div>
+
+    <!-- Introduction -->
+    <section class="intro-section">
+        <h2>
+            Fighting Poverty Through Awareness and Action
+        </h2>
+        <p>
+            Poverty means not having enough resources
+            to meet basic needs such as food, clean water,
+            clothing, education and shelter.
+        </p>
+        <p>
+            It can also mean not having access to healthcare,
+            education, stable housing or opportunities
+            for a secure future.
+        </p>
+        <p>
+            Our goal is to help people discover organizations
+            that work to support communities in need
+            and make it easier to find ways to help.
+        </p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        let slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            slideIndex += n;
+            showDivs(slideIndex);
+        }
+
+        function showDivs(n) {
+            const slides =
+                document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>

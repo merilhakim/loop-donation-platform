@@ -1,0 +1,298 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOPEFULL LIGHT | Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: white;
+            color: #2F6FB3;
+        }
+        h1,
+        h3 {
+            color: #2F6FB3;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+        th,
+        td {
+            text-align: left;
+            padding: 14px;
+        }
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+        td {
+            color: #2F6FB3;
+            border-bottom: 1px solid #D6EAF8;
+        }
+        .organization-row:nth-child(even) {
+            background-color: #F5FAFE;
+        }
+        .organization-row:hover {
+            background-color: #D6EAF8;
+        }
+        #orgSearch {
+            width: 350px;
+            max-width: 90%;
+            padding: 12px;
+            border: 2px solid #4A90E2;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+        }
+        #orgSearch:focus {
+            border-color: #2F6FB3;
+        }
+        .donate-link {
+            display: inline-block;
+            padding: 9px 14px;
+            background-color: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .donate-link:hover {
+            background-color: #2F6FB3;
+        }
+        .intro-section {
+            max-width: 900px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <ul>
+        <li>
+            <a class="nav-link" href="index.html">
+                HOME
+            </a>
+            <a class="nav-link" href="about us.html">
+                ABOUT US
+            </a>
+            <a class="nav-link" href="water.html">
+                THIRST
+            </a>
+            <a class="nav-link" href="hunger.html">
+                HUNGER
+            </a>
+            <a class="nav-link active" href="clothing.html">
+                CLOTHES
+            </a>
+            <a class="nav-link" href="quality education.html">
+                LEARNING
+            </a>
+            <a class="nav-link" href="shelter.html">
+                SHELTER
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <!-- Page Introduction -->
+    <section class="intro-section">
+        <h1>
+            Clothing
+        </h1>
+        <h3>
+            Access to suitable clothing is an important part of
+            health, safety and dignity.
+            <br><br>
+            Clothing helps protect people from weather conditions,
+            environmental hazards and exposure.
+            <br><br>
+            For children, families and people experiencing hardship,
+            access to appropriate clothing can also affect education,
+            employment and everyday participation in society.
+            <br><br>
+            The organizations below provide different ways to help,
+            including donating clothing, shoes, coats or financial support.
+        </h3>
+    </section>
+    <hr>
+    <br>
+    <!-- Search -->
+    <input
+        type="text"
+        id="orgSearch"
+        placeholder="Search by organization, kids, coats, shoes, women..."
+        oninput="searchOrganizations()"
+    >
+    <br><br>
+
+    <!-- Organizations Table -->
+    <table>
+        <tr>
+            <th>ORGANIZATION</th>
+            <th>FOCUS</th>
+            <th>WHERE THEY WORK</th>
+            <th>INFORMATION</th>
+            <th>WEBSITE</th>
+        </tr>
+        <!-- Soles4Souls -->
+        <tr
+            class="organization-row"
+            data-name="soles4souls"
+            data-tags="shoes clothing clothes kids children families poverty recycling crisis communities"
+        >
+            <td>
+                Soles4Souls
+            </td>
+            <td>
+                Shoes and clothing
+            </td>
+            <td>
+                International
+            </td>
+            <td>
+                Soles4Souls collects new and gently used shoes
+                and clothing.
+                The organization works to extend the life of donated
+                items while supporting people in crisis,
+                entrepreneurs and communities around the world.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://soles4souls.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- One Warm Coat -->
+        <tr
+            class="organization-row"
+            data-name="one warm coat"
+            data-tags="coats clothing winter cold kids children adults families homeless warmth"
+        >
+            <td>
+                One Warm Coat
+            </td>
+            <td>
+                Coats and winter clothing
+            </td>
+            <td>
+                United States
+            </td>
+            <td>
+                One Warm Coat works to provide free coats
+                to children and adults in need.
+                Volunteers can donate coats or organize local coat drives,
+                and nonprofit partners distribute them within their communities.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.onewarmcoat.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- Dress for Success -->
+        <tr
+            class="organization-row"
+            data-name="dress for success"
+            data-tags="women clothing professional work jobs employment career clothes economic independence"
+        >
+            <td>
+                Dress for Success
+            </td>
+            <td>
+                Professional clothing and employment support
+            </td>
+            <td>
+                Global network
+            </td>
+            <td>
+                Dress for Success helps women work toward
+                economic independence.
+                Its programs include professional attire,
+                career support, job-readiness resources
+                and workplace development.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://dressforsuccess.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- UNICEF -->
+        <tr
+            class="organization-row"
+            data-name="unicef"
+            data-tags="kids children families humanitarian emergency clothes clothing"
+        >
+            <td>
+                UNICEF
+            </td>
+            <td>
+                Children and humanitarian aid
+            </td>
+            <td>
+                International
+            </td>
+            <td>
+                UNICEF works to protect children's rights
+                and support children and families affected
+                by poverty, emergencies and humanitarian crises.
+                Its work includes access to basic necessities,
+                health, education and emergency support.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.unicef.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- JavaScript -->
+    <script>
+        function searchOrganizations() {
+            const searchText =
+                document
+                    .getElementById("orgSearch")
+                    .value
+                    .toLowerCase()
+                    .trim();
+            const rows =
+                document.querySelectorAll(".organization-row");
+            rows.forEach(function(row) {
+                const name =
+                    row.dataset.name.toLowerCase();
+                const tags =
+                    row.dataset.tags.toLowerCase();
+                if (
+                    name.includes(searchText) ||
+                    tags.includes(searchText)
+                ) {
+                    row.style.display = "";
+                }
+                else {
+                    row.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

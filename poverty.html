@@ -1,0 +1,316 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOPEFULL LIGHT | Poverty</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: white;
+            color: #2F6FB3;
+        }
+        h1,
+        h3 {
+            color: #2F6FB3;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+        th,
+        td {
+            text-align: left;
+            padding: 14px;
+        }
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+        td {
+            color: #2F6FB3;
+            border-bottom: 1px solid #D6EAF8;
+        }
+        .organization-row:nth-child(even) {
+            background-color: #F5FAFE;
+        }
+        .organization-row:hover {
+            background-color: #D6EAF8;
+        }
+        #orgSearch {
+            width: 350px;
+            max-width: 90%;
+            padding: 12px;
+            border: 2px solid #4A90E2;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+        }
+        #orgSearch:focus {
+            border-color: #2F6FB3;
+        }
+        .donate-link {
+            display: inline-block;
+            padding: 9px 14px;
+            background-color: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .donate-link:hover {
+            background-color: #2F6FB3;
+        }
+        .intro-section {
+            max-width: 900px;
+            line-height: 1.7;
+        }
+        .stat {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <ul>
+        <li>
+            <a class="nav-link" href="index.html">
+                HOME
+            </a>
+            <a class="nav-link" href="about us.html">
+                ABOUT US
+            </a>
+            <a class="nav-link" href="water.html">
+                THIRST
+            </a>
+            <a class="nav-link" href="hunger.html">
+                HUNGER
+            </a>
+            <a class="nav-link" href="clothing.html">
+                CLOTHES
+            </a>
+            <a class="nav-link" href="quality education.html">
+                LEARNING
+            </a>
+            <a class="nav-link" href="shelter.html">
+                SHELTER
+            </a>
+        </li>
+    </ul>
+    <hr>
+
+    <!-- Introduction -->
+    <section class="intro-section">
+        <h1>
+            Poverty
+        </h1>
+        <h3>
+            Poverty is more than not having enough money.
+            It can mean not having reliable access to food,
+            clean water, safe shelter, education, healthcare
+            or stable employment.
+            <br><br>
+            According to the World Bank,
+            more than
+            <span class="stat">824 million people</span>
+            were living in extreme poverty in 2024.
+            <br><br>
+            Children are especially vulnerable.
+            UNICEF reports that around
+            <span class="stat">412 million children</span>
+            live in extreme monetary poverty,
+            while nearly
+            <span class="stat">900 million children</span>
+            experience multidimensional poverty.
+            <br><br>
+            The organizations below work in different ways
+            to reduce poverty, support families,
+            respond to crises and improve access
+            to basic services and economic opportunities.
+        </h3>
+    </section>
+    <hr>
+    <br>
+    <!-- Search -->
+    <input
+        type="text"
+        id="orgSearch"
+        placeholder="Search organizations, children, women, poverty, education..."
+        oninput="searchOrganizations()"
+    >
+    <br><br>
+    <!-- Organizations Table -->
+    <table>
+        <tr>
+            <th>ORGANIZATION</th>
+            <th>FOCUS</th>
+            <th>WHERE THEY WORK</th>
+            <th>INFORMATION</th>
+            <th>WEBSITE</th>
+        </tr>
+        <!-- UNICEF -->
+        <tr
+            class="organization-row"
+            data-name="unicef"
+            data-tags="children kids poverty education health water food shelter families humanitarian social protection"
+        >
+            <td>
+                UNICEF
+            </td>
+            <td>
+                Child poverty and basic services
+            </td>
+            <td>
+                Global
+            </td>
+            <td>
+                UNICEF works with governments and partners
+                to reduce child poverty and improve access
+                to education, healthcare, nutrition,
+                clean water, sanitation and social protection.
+                It also provides humanitarian assistance
+                to children and families during emergencies.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.unicef.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- Oxfam -->
+        <tr
+            class="organization-row"
+            data-name="oxfam"
+            data-tags="poverty inequality hunger women families emergency economic justice climate humanitarian"
+        >
+            <td>
+                Oxfam
+            </td>
+            <td>
+                Poverty, inequality and humanitarian aid
+            </td>
+            <td>
+                International
+            </td>
+            <td>
+                Oxfam works to reduce poverty and inequality.
+                Its work includes humanitarian relief,
+                economic justice, gender equality,
+                access to clean water and support for
+                communities affected by crises.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.oxfamamerica.org/donate/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- CARE -->
+        <tr
+            class="organization-row"
+            data-name="care"
+            data-tags="poverty women girls families education jobs economic opportunity emergency aid humanitarian"
+        >
+            <td>
+                CARE
+            </td>
+            <td>
+                Poverty reduction and economic opportunity
+            </td>
+            <td>
+                International
+            </td>
+            <td>
+                CARE works with communities experiencing poverty
+                and humanitarian crises.
+                Its programs support education,
+                economic opportunity, emergency assistance
+                and initiatives that help women and families
+                build more secure livelihoods.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://my.care.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- World Food Programme -->
+        <tr
+            class="organization-row"
+            data-name="world food programme wfp"
+            data-tags="poverty hunger food families children emergency meals humanitarian"
+        >
+            <td>
+                World Food Programme
+            </td>
+            <td>
+                Hunger and food insecurity
+            </td>
+            <td>
+                Global
+            </td>
+            <td>
+                The World Food Programme provides food assistance
+                during emergencies and supports programs
+                that help communities improve food security
+                and resilience.
+                Hunger and poverty are closely connected,
+                so food assistance can be an important part
+                of supporting families in crisis.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.wfp.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- JavaScript -->
+    <script>
+        function searchOrganizations() {
+            const searchText =
+                document
+                    .getElementById("orgSearch")
+                    .value
+                    .toLowerCase()
+                    .trim();
+            const rows =
+                document.querySelectorAll(".organization-row");
+            rows.forEach(function(row) {
+                const name =
+                    row.dataset.name.toLowerCase();
+                const tags =
+                    row.dataset.tags.toLowerCase();
+                if (
+                    name.includes(searchText) ||
+                    tags.includes(searchText)
+                ) {
+                    row.style.display = "";
+                }
+                else {
+                    row.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

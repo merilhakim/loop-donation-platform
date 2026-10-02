@@ -1,0 +1,146 @@
+:root {
+    --blue-dark: #2F6FB3;
+    --blue-main: #4A90E2;
+    --blue-light: #D6EAF8;
+    --blue-extra-light: #EEF6FC;
+    --white: #FFFFFF;
+}
+/*General page styling */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--white);
+    color: var(--blue-dark);
+    font-family: Arial, sans-serif;
+}
+h1,
+h2,
+h3 {
+    color: var(--blue-dark);
+}
+hr {
+    border: none;
+    border-top: 1px solid var(--blue-light);
+    margin: 25px 0;
+}
+/* Navigation */
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.nav-link {
+    color: var(--white);
+    background-color: var(--blue-main);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+.nav-link.active {
+    background-color: var(--white);
+    color: var(--blue-dark);
+
+    border: 2px solid var(--blue-main);
+}
+
+/* Page introductions*/
+.intro-section {
+    max-width: 900px;
+    line-height: 1.7;
+}
+.stat {
+    font-weight: bold;
+}
+
+/* Organization search*/
+#orgSearch {
+    width: 350px;
+    max-width: 90%;
+    padding: 12px;
+    border: 2px solid var(--blue-main);
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+#orgSearch:focus {
+    border-color: var(--blue-dark);
+}
+
+/* Organization tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    margin-top: 20px;
+}
+th,
+td {
+    text-align: left;
+    padding: 14px;
+}
+th {
+    background-color: var(--blue-main);
+    color: var(--white);
+}
+td {
+    color: var(--blue-dark);
+    border-bottom: 1px solid var(--blue-light);
+}
+.organization-row:nth-child(even) {
+    background-color: var(--blue-extra-light);
+}
+.organization-row:hover {
+    background-color: var(--blue-light);
+}
+
+/* Links / buttons*/
+table a {
+    color: var(--blue-dark);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: var(--blue-main);
+}
+
+.donate-link {
+    display: inline-block;
+    padding:11px 14px;
+    background-color: var(--blue-main);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.donate-link:hover {
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+/* About page */
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+.about-section p {
+    color: var(--blue-dark);
+    font-size: 18px;
+}

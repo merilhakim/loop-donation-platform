@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOPEFULL LIGHT | Quality Education</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: white;
+            color: #2F6FB3;
+        }
+        h1,
+        h3 {
+            color: #2F6FB3;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+        th,
+        td {
+            text-align: left;
+            padding: 14px;
+        }
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+        td {
+            color: #2F6FB3;
+            border-bottom: 1px solid #D6EAF8;
+        }
+        .organization-row:nth-child(even) {
+            background-color: #F5FAFE;
+        }
+        .organization-row:hover {
+            background-color: #D6EAF8;
+        }
+        #orgSearch {
+            width: 350px;
+            max-width: 90%;
+            padding: 12px;
+            border: 2px solid #4A90E2;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+        }
+        #orgSearch:focus {
+            border-color: #2F6FB3;
+        }
+        .donate-link {
+            display: inline-block;
+            padding: 9px 14px;
+            background-color: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .donate-link:hover {
+            background-color: #2F6FB3;
+        }
+        .intro-section {
+            max-width: 900px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <ul>
+        <li>
+            <a class="nav-link" href="index.html">
+                HOME
+            </a>
+            <a class="nav-link" href="about us.html">
+                ABOUT US
+            </a>
+            <a class="nav-link" href="water.html">
+                THIRST
+            </a>
+            <a class="nav-link" href="hunger.html">
+                HUNGER
+            </a>
+            <a class="nav-link" href="clothing.html">
+                CLOTHES
+            </a>
+            <a class="nav-link active" href="quality education.html">
+                LEARNING
+            </a>
+            <a class="nav-link" href="shelter.html">
+                SHELTER
+            </a>
+        </li>
+    </ul>
+    <hr>
+
+    <!-- Introduction -->
+    <section class="intro-section">
+        <h1>
+            Quality Education
+        </h1>
+        <h3>
+            Education gives children and young people
+            the knowledge and skills they need to build
+            opportunities for their future.
+            <br><br>
+            Quality education is not only about attending school.
+            Students also need trained teachers,
+            safe learning environments,
+            books and learning materials,
+            and equal opportunities to succeed.
+            <br><br>
+            Some children face additional barriers because of
+            poverty, gender inequality, displacement,
+            conflict or humanitarian emergencies.
+            <br><br>
+            The organizations below work to improve access
+            to education, literacy and learning opportunities
+            for children and young people.
+        </h3>
+    </section>
+    <hr>
+    <br>
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="orgSearch"
+        placeholder="Search organizations, literacy, girls, school, emergency..."
+        oninput="searchOrganizations()"
+    >
+    <br><br>
+
+    <!-- Organizations Table -->
+    <table>
+        <tr>
+            <th>ORGANIZATION</th>
+            <th>FOCUS</th>
+            <th>WHERE THEY WORK</th>
+            <th>INFORMATION</th>
+            <th>WEBSITE</th>
+        </tr>
+        <!-- Room to Read -->
+        <tr
+            class="organization-row"
+            data-name="room to read"
+            data-tags="education school literacy reading books girls gender equality children students teachers"
+        >
+            <td>
+                Room to Read
+            </td>
+            <td>
+                Literacy and girls' education
+            </td>
+            <td>
+                International
+            </td>
+            <td>
+                Room to Read helps children develop foundational
+                literacy skills and supports gender equality
+                through education programs.
+                Its work includes teacher training,
+                learning materials, children's books,
+                mentoring and life-skills education.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.roomtoread.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- Save the Children -->
+        <tr
+            class="organization-row"
+            data-name="save the children"
+            data-tags="education children kids school teachers literacy learning crisis emergency rural"
+        >
+            <td>
+                Save the Children
+            </td>
+            <td>
+                Child education and early learning
+            </td>
+            <td>
+                International
+            </td>
+            <td>
+                Save the Children supports schools,
+                teachers and communities to help children
+                access safe and inclusive education.
+                Its education programs include early learning,
+                literacy and support for children whose education
+                is disrupted by emergencies or crises.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.savethechildren.org/us/what-we-do/education"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+
+        <!-- Education Cannot Wait -->
+        <tr
+            class="organization-row"
+            data-name="education cannot wait"
+            data-tags="education emergency crisis refugees displacement conflict school children girls humanitarian"
+        >
+            <td>
+                Education Cannot Wait
+            </td>
+            <td>
+                Education in emergencies
+            </td>
+            <td>
+                Global
+            </td>
+            <td>
+                Education Cannot Wait is the United Nations
+                global fund for education in emergencies
+                and protracted crises.
+                It supports learning for children affected
+                by conflict, displacement, disasters
+                and other humanitarian emergencies.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.educationcannotwait.org/"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+        <!-- UNICEF -->
+        <tr
+            class="organization-row"
+            data-name="unicef"
+            data-tags="education school children kids learning humanitarian emergency girls teachers students"
+        >
+            <td>
+                UNICEF
+            </td>
+            <td>
+                Children's education and basic services
+            </td>
+            <td>
+                Global
+            </td>
+            <td>
+                UNICEF works with governments and partners
+                to improve children's access to education,
+                especially for children affected by poverty,
+                emergencies and inequality.
+                Its work also includes health,
+                nutrition, water and child protection.
+            </td>
+            <td>
+                <a
+                    class="donate-link"
+                    href="https://www.unicef.org/education"
+                    target="_blank"
+                >
+                    Visit Organization
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- JavaScript -->
+    <script>
+        function searchOrganizations() {
+            const searchText =
+                document
+                    .getElementById("orgSearch")
+                    .value
+                    .toLowerCase()
+                    .trim();
+            const rows =
+                document.querySelectorAll(".organization-row");
+            rows.forEach(function(row) {
+                const name =
+                    row.dataset.name.toLowerCase();
+                const tags =
+                    row.dataset.tags.toLowerCase();
+                if (
+                    name.includes(searchText) ||
+                    tags.includes(searchText)
+                ) {
+                    row.style.display = "";
+                }
+                else {
+                    row.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
